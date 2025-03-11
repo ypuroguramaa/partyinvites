@@ -31,6 +31,9 @@
 			<option value="true" {{if .WillAttend}} selected {{ end }}>
 			Yes, I'll be there
 			</option>
+			<option value="false" {{if not .WillAttend}} selected {{ end }}>
+			No, I can't come
+			</option>
 		</select>
 	</div>
 	<button class="btn btn-primary mt-3" type="submit">
